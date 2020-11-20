@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="Create Angularjs" description="" type="wrap">
+<insertText location="beforeSelection">
+<![CDATA[$scope.Create = function(dulieu){
+$http.post("index.php?option=com_katas&task=Chusau.VitienRead&format=raw",{'dulieu':dulieu})  
+.then(function(response) { 
+$scope.vitien = response.data; 
+console.log(response.data);
+}); 
+}]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>
