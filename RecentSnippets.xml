@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recentSnippets max="10">
+	<snippet name="Sql\Remove SQL" id="Snippets*Sql*Remove_SQL.csn" />
+	<snippet name="Sql\Update SQL" id="Snippets*Sql*Update_SQL.csn" />
+	<snippet name="Sql\Read SQL" id="Snippets*Sql*Read_SQL.csn" />
+	<snippet name="Sql\Create SQL" id="Snippets*Sql*Create_SQL.csn" />
+	<snippet name="Form\Table Data" id="Snippets*Form*Table_Data.csn" />
+	<snippet name="Form\AddNewForm" id="Snippets*Form*AddNewForm.csn" />
+</recentSnippets>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="Table Data" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[<div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Mã SP</th>
+          <th>Tên Sản Phẩm</th>
+          <th>Đơn Vị Tính</th>
+          <th>Chức Năng</th>
+          <th>Cách Sử Dụng</th>
+          <th>Lưu Ý, Chỉ ĐỊnh</th>
+          <th>Quy Trình</th>
+          <th>Ngày Tạo</th>
+         <th>Sửa/Xóa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="nvl in NVLs">
+        <td>{{$index+1}}</td>
+        <td>{{nvl.MaSP}}</td>  
+        <td>{{nvl.TenSP}}</td> 
+        <td>{{nvl.DVT}}</td>  
+        <td>{{nvl.Chucnang}}</td>
+        <td>{{nvl.Cachsudung}}</td>  
+        <td>{{nvl.Luuy}}</td>
+        <td>{{nvl.Quytrinh}}</td>  
+        <td>{{nvl.Ngaytao}}</td>
+        <td class="d-flex flex-column text-center">
+         <h2 class="fas fa-edit btn btn-info"  ng-click="edit(nvl)" data-toggle="modal" data-target="#Nguyenvatlieu"></h2>	
+         <h2 class="fas fa-trash-alt btn btn-danger" data-toggle="modal" data-target="#DelNguyenvatlieu"></h2>
+         </td>   
+       </tr>
+      </tbody>
+    </table>
+  </div>]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>
