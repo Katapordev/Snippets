@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="search" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[<input ng-model="searchText.TenSP" type="text" class="form-control" />]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

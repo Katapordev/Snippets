@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="form" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[<input autocomplete="off" required class="ladi-form-control" type="text" placeholder="Họ và tên" value="" ng-model="dulieu.Hoten"/>
+<input autocomplete="off" required class="ladi-form-control" type="text" placeholder="Địa Chỉ" value="" ng-model="dulieu.Diachi"/>
+<input autocomplete="off" required class="ladi-form-control" placeholder="Số điện thoại" value="" ng-model="dulieu.SDT"/>
+ <input  type="hidden" value="" id="dulieuUTM" ng-model="dulieu.UTM" value="<?php echo $_SERVER['QUERY_STRING']; ?>"/>
+<input  type="hidden" value="" id="dulieuUTM" ng-model="dulieu.idSP" value="7"/>
+ng-click="Dathang(dulieu)"]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

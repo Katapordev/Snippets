@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="fbbody" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="325711998072580"
+  theme_color="#ffc300">]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>
