@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="ReadAngularjs" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[$scope.CodeRead = function(){
+$http.post("index.php?option=com_katas&task=Chusau.CodeRead&format=raw")  
+.then(function(response) { 
+$scope.Codes = response.data; 
+console.log(response.data);
+}); 
+}]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="Read SQL" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[public function Read() {
+        date_default_timezone_set("Asia/Ho_Chi_Minh");
+        $data = json_decode(file_get_contents("php://input"));
+        $user = Factory::getUser();
+        $admin = $user->authorise('core.admin');
+        $db = Factory::getDbo();
+        $query = $db->getQuery(true);
+        $query->select(array('a.id', 'a.idUser', 'a.Field1', 'a.Field2', 'a.Field3','a.Trangthai','a.Ngaytao', 'b.name'))->from($db->quoteName('#__anhson_banhang', 'a'))->join('INNER', $db->quoteName('#__users', 'b') . ' ON ' . $db->quoteName('a.idUser') . ' = ' . $db->quoteName('b.id'))->order('id DESC')
+			->where($db->quoteName('a.Del').'=0');
+        $db->setQuery($query);
+        $row = $db->loadObjectList();
+        print_r(json_encode((array)$row));
+    }]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

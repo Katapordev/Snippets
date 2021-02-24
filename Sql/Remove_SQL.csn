@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="Remove SQL" description="" type="wrap">
+<insertText location="beforeSelection">
+<![CDATA[    public function Remove() {
+		$data = json_decode(file_get_contents("php://input"));
+        $user = Factory::getUser();
+        $db = Factory::getDbo();
+        $profile = new \stdClass;
+        $profile->id = $data->id;
+        $profile->Del = 1;
+        $result = $db->updateObject('#__anhson_banhang', $profile,'id');
+		print_r($result);
+    }]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

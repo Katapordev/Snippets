@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="Input Form HML" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[<div class="form-group">
+	<fieldset class="border p-2"><legend class="w-auto">Field2</legend>
+		<input class="form-control {{editcolor}}" ng-model="code.Field2" placeholder="Field2">	   
+	</fieldset>
+</div>]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

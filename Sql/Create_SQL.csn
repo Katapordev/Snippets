@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="Create SQL" description="" type="block">
+<insertText location="beforeSelection">
+<![CDATA[public function Create() {
+        $data = json_decode(file_get_contents("php://input"));
+        $dulieu = $data->dulieu;
+        $user = Factory::getUser();
+        $db = Factory::getDbo();
+        $profile = new \stdClass;
+        $profile->idUser = $user->id;
+        $profile->Field1 = $dulieu->Field1;
+        $profile->Field2 = $dulieu->Field2;
+        $profile->Field3 = $dulieu->Field3;
+        $profile->Trangthai = (int) $dulieu->Trangthai;
+        $result = $db->insertObject('#__anhson_banhang', $profile);
+		print_r($result);
+    }]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>
