@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recentSnippets max="10">
-	<snippet name="Sql\Remove SQL" id="Snippets*Sql*Remove_SQL.csn" />
-	<snippet name="Sql\Update SQL" id="Snippets*Sql*Update_SQL.csn" />
-	<snippet name="Sql\Read SQL" id="Snippets*Sql*Read_SQL.csn" />
-	<snippet name="Sql\Create SQL" id="Snippets*Sql*Create_SQL.csn" />
-	<snippet name="Form\Table Data" id="Snippets*Form*Table_Data.csn" />
-	<snippet name="Form\AddNewForm" id="Snippets*Form*AddNewForm.csn" />
+	<snippet name="Kataprodev\HTML\search" id="Snippets*Kataprodev*HTML*search.csn" />
+	<snippet name="Kataprodev\HTML\modal" id="Snippets*Kataprodev*HTML*modal.csn" />
+	<snippet name="Kataprodev\Sql\Update SQL" id="Snippets*Kataprodev*Sql*Update_SQL.csn" />
+	<snippet name="Kataprodev\Sql\Remove SQL" id="Snippets*Kataprodev*Sql*Remove_SQL.csn" />
+	<snippet name="Kataprodev\Sql\Read SQL" id="Snippets*Kataprodev*Sql*Read_SQL.csn" />
+	<snippet name="Kataprodev\Sql\Create SQL" id="Snippets*Kataprodev*Sql*Create_SQL.csn" />
+	<snippet name="Kataprodev\Form\Table Data" id="Snippets*Kataprodev*Form*Table_Data.csn" />
+	<snippet name="Kataprodev\Form\AddNewForm" id="Snippets*Kataprodev*Form*AddNewForm.csn" />
 </recentSnippets>
